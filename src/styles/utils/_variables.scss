@@ -1,0 +1,27 @@
+// Палитра
+
+// Fonts
+$basic-font: 'Montserrat', sans-serif;
+
+// Colors
+// Accent color
+$accent-color: #ff6b08;
+// Text colors
+$white-color: #ffffff;
+$black-color: #000000;
+
+$green-color: lime;
+$ligth-grey-color: #adb1b7;
+$grey-color: #a8a8a8;
+$dark-grey-color: #595959;
+
+// Background colors
+$main-bg-color: #f5f7fa;
+$aside-bg-color: #1e2939;
+$hover-bg-color: rgba(128, 128, 128, 0.2);
+
+//Shadow
+$cardshadow: 0 2px 4px 0 hsla(198, 45%, 10%, 0.12);
+
+// Timing
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,0 +1,13 @@
+{{#each this}}
+<li class="project-item">
+    <a class="project-link" target="_blank" href="{{url}}">
+        <img class="project-screenshot" src="{{screenshot}}" alt="screenshot" width="100px" height="50px" />
+        <div>
+            <h4 class="project-name">{{name}}</h4>
+            <p class="description">{{description}} </p>
+        </div>
+        <p class="description">{{stack}}
+        </p>
+    </a>
+</li>
+{{/each}}

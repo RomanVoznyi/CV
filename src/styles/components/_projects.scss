@@ -1,0 +1,74 @@
+.name {
+  @include font(700, 45px, 1.98);
+}
+
+.summary-item {
+  display: grid;
+  grid-template-columns: 50px auto;
+  column-gap: 5px;
+}
+
+.description {
+  color: $dark-grey-color;
+}
+
+.big-titles {
+  @include font(700, 22px);
+}
+
+.project-list {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.project-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  column-gap: 10px;
+  padding: 5px;
+  align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: $cardshadow;
+  background-color: transparent;
+  @include transition(background-color);
+
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+}
+
+.project-screenshot {
+  object-fit: contain;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.project-name {
+  @include font(700, 16px);
+  color: $black-color;
+}
+
+.middle-titles {
+  @include font(700, 16px);
+  color: $accent-color;
+}
+
+.details {
+  margin-left: 20px;
+}
+
+.dates {
+  @include font(400, 12px);
+  color: $grey-color;
+}
+
+.small-titles {
+  @include font(700);
+}

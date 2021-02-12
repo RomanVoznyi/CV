@@ -1,0 +1,84 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include font();
+  background-color: $main-bg-color;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  border: none;
+  overflow: hidden;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: stretch;
+  padding: 10px;
+}
+
+.sub-section {
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 20px;
+
+  &.aside {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    background-color: $aside-bg-color;
+    color: $white-color;
+  }
+
+  &.projects {
+    padding-left: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    background-color: $white-color;
+  }
+}
