@@ -31,7 +31,7 @@ export const ownProjects = [
     description:
       'aplication with the ability to register users and work with private collections of contacts',
     stack:
-      'React (hooks, router, lazy), Redux Toolkit, JS, SCSS, HTML, REST API,   AJAX, Netlify',
+      'React (hooks, router, lazy), Redux Toolkit, JS, SCSS, HTML, REST API, AJAX, Netlify',
   },
   {
     name: 'MovieFinder',

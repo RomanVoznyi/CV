@@ -2,4 +2,5 @@
 
 ### Technologies stack:
 
-HTML5, Sass, JavaScript ES6+, Parcel, GIT
+'React, Redux, JS, Node.js, HTML, Handlebars, CSS, SCSS, REST API, AJAX,
+Netlify, GIT, Github, Webpack, Parcel, Figma, Trello'
