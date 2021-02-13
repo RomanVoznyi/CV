@@ -4,10 +4,15 @@
         <img class="project-screenshot" src="{{screenshot}}" alt="screenshot" width="100px" height="50px" />
         <div>
             <h4 class="project-name">{{name}}</h4>
-            <p class="description">{{description}} </p>
+            <div class="project-content">
+                <img class="project-icon" src="{{icons.description}}" alt="icon">
+                <span class="description">{{description}} </span>
+            </div>
+            <div class="project-content">
+                <img class="project-icon" src="{{icons.tools}}" alt="icon">
+                <span class="description">{{stack}}</span>
+            </div>
         </div>
-        <p class="description">{{stack}}
-        </p>
     </a>
 </li>
 {{/each}}

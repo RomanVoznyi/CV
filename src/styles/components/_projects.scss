@@ -27,7 +27,7 @@
 
 .project-link {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 100px auto;
   column-gap: 10px;
   padding: 5px;
   align-items: center;
@@ -58,6 +58,17 @@
 .middle-titles {
   @include font(700, 16px);
   color: $accent-color;
+}
+
+.project-content {
+  @include flex(left);
+}
+
+.project-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .details {

@@ -6,5 +6,7 @@ const refs = {
   own: document.querySelector('.js-own'),
 };
 
+console.log(teamProjects);
+
 refs.team.innerHTML = tpl(teamProjects);
 refs.own.innerHTML = tpl(ownProjects);
