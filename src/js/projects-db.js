@@ -1,3 +1,4 @@
+import qaTest from '../images/screenshots/qa-screenshot.jpg';
 import filmoteka from '../images/screenshots/filmoteka-screenshot.jpg';
 import barberShop from '../images/screenshots/barber-screenshot.jpg';
 import phoneBook from '../images/screenshots/phoonebook-screenshot.jpg';
@@ -8,6 +9,15 @@ import description from '../images/description.svg';
 import tools from '../images/tools.svg';
 
 export const teamProjects = [
+  {
+    name: 'Pro Test for a QA Engineer',
+    url: 'https://test-qa.netlify.app/',
+    screenshot: qaTest,
+    description: 'QA testing app (role: fullstack developer (front and back))',
+    stack:
+      'Node, React, Redux, Styled Component, REST API, AJAX, Netlify, GIT, Figma, Trello',
+    icons: { description, tools },
+  },
   {
     name: 'Filmoteka',
     url: 'https://romanvoznyy.github.io/final-project-js',
