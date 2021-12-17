@@ -53,10 +53,13 @@ label {
 }
 
 .section {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  align-items: stretch;
+  min-width: 310px;
   padding: 10px;
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: stretch;
+  }
 }
 
 .sub-section {
@@ -75,10 +78,13 @@ label {
   }
 
   &.projects {
-    padding-left: 40px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 
     background-color: $white-color;
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 40px;
+    }
   }
 }
