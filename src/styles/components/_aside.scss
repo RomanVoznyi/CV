@@ -1,17 +1,54 @@
 .img-box {
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  @include flex();
 
   & > img {
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin: 0 auto;
+    margin-right: 20px;
+
+    @media screen and (min-width: $mobile) {
+      width: 150px;
+      height: 150px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 250px;
+      height: 250px;
+      margin-right: 0px;
+    }
   }
 }
 
-.aside-titles {
-  @include font(700, 22px);
+.name-mobile-box {
+  display: inline-block;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.name-mobile {
+  @include font(700, 24px, 1.25);
   margin-bottom: 10px;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 28px;
+  }
+}
+
+.small-titles-mobile {
+  @include font(500, 14px, 1.25);
+}
+
+.aside-titles {
+  @include font(700, 20px);
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 22px;
+  }
 }
 
 .contacts-box {

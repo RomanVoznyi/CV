@@ -1,0 +1,43 @@
+.popup {
+  position: fixed;
+  @include allSpace();
+  @include flex(center, flex-start);
+  padding: 10px;
+  background-color: $hover-bg-color;
+  overflow-y: scroll;
+  z-index: 3;
+
+  @media screen and (min-width: ($mobile+1)) {
+    padding: 50px;
+  }
+}
+
+.close-popup-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid $accent-color;
+  color: $white-color;
+  background-color: $aside-bg-color;
+  font: inherit;
+  cursor: pointer;
+  @include transition(transform);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.popup-sertificate {
+  width: 200px;
+  height: auto;
+  display: block;
+
+  @media screen and (min-width: ($mobile+1)) {
+    width: 500px;
+  }
+}

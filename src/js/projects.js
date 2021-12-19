@@ -10,7 +10,16 @@ addBackToTop({
 const refs = {
   team: document.querySelector('.js-team'),
   own: document.querySelector('.js-own'),
+  sertif: document.querySelector('.sertificate'),
+  popup: document.querySelector('.popup'),
 };
 
 refs.team.innerHTML = tpl(teamProjects);
 refs.own.innerHTML = tpl(ownProjects);
+
+refs.sertif.addEventListener('click', toggleHidden);
+refs.popup.addEventListener('click', toggleHidden);
+
+function toggleHidden() {
+  refs.popup.classList.toggle('visually-hidden');
+}
